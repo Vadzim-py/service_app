@@ -143,3 +143,8 @@ LOGGING = {
         }
     }
 }
+
+# celery and redis
+
+CELERY_BROKER_URL = 'redis://redis:6379/0'
+

@@ -41,6 +41,11 @@ services:
       - redis
     depends_on:
       - redis
+      - database
+    environment:
+      - POSTGRES_DB=dbname
+      - POSTGRES_USER=dbuser
+      - POSTGRES_PASSWORD=pass
 
   flower:
     build:
